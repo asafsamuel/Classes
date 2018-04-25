@@ -1,0 +1,2 @@
+# Classes
+Improved new classes
