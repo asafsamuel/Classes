@@ -1,2 +1,2 @@
-# Classes
-Improved new classes
+# Java Classes
+Improved new java classes
