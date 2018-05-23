@@ -1,5 +1,0 @@
-C:\Users\samuelas\Desktop\java_projects\A\src\constance>"C:\Program Files\Java\jdk1.8.0_144\bin\javac.exe" ConstantFold.java
-
-
-
-C:\Users\samuelas\Desktop\java_projects\A\src\constance>"C:\Program Files\Java\jdk1.8.0_144\bin\javap.exe" -v -l ConstantFold.class
