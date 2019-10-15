@@ -1,0 +1,174 @@
+***********************************************************************************
+*****************************       2  Threads        *****************************
+*****************************   (1 Write | 1 Read )   *****************************
+***********************************************************************************
+
+Array:
+------
+Benchmark                             Mode      Cnt      Score       Error   Units
+Benchmark_1.test                     thrpt        5   3207.922 ± 23628.341  ops/ms
+Benchmark_1.test:addValue            thrpt        5   2250.181 ± 16109.473  ops/ms
+Benchmark_1.test:removeMin           thrpt        5    957.741 ±  7519.278  ops/ms
+Benchmark_1.test                    sample  1523542      0.010 ±     0.031   ms/op
+Benchmark_1.test:addValue           sample   797748      0.018 ±     0.059   ms/op
+Benchmark_1.test:addValue·p0.00     sample                 ≈ 0               ms/op
+Benchmark_1.test:addValue·p0.50     sample                 ≈ 0               ms/op
+Benchmark_1.test:addValue·p0.90     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.95     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.99     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.999    sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.9999   sample               0.011               ms/op
+Benchmark_1.test:addValue·p1.00     sample           14327.742               ms/op
+Benchmark_1.test:removeMin          sample   725794     ≈ 10⁻⁴               ms/op
+Benchmark_1.test:removeMin·p0.00    sample                 ≈ 0               ms/op
+Benchmark_1.test:removeMin·p0.50    sample                 ≈ 0               ms/op
+Benchmark_1.test:removeMin·p0.90    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.95    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.99    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.999   sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.9999  sample               0.021               ms/op
+Benchmark_1.test:removeMin·p1.00    sample              20.447               ms/op
+Benchmark_1.test:test·p0.00         sample                 ≈ 0               ms/op
+Benchmark_1.test:test·p0.50         sample                 ≈ 0               ms/op
+Benchmark_1.test:test·p0.90         sample               0.001               ms/op
+Benchmark_1.test:test·p0.95         sample               0.001               ms/op
+Benchmark_1.test:test·p0.99         sample               0.001               ms/op
+Benchmark_1.test:test·p0.999        sample               0.001               ms/op
+Benchmark_1.test:test·p0.9999       sample               0.015               ms/op
+Benchmark_1.test:test·p1.00         sample           14327.742               ms/op
+
+Tree:
+-----
+Benchmark                             Mode      Cnt      Score       Error   Units
+Benchmark_1.test                     thrpt        5  12909.602 ± 41836.781  ops/ms
+Benchmark_1.test:addValue            thrpt        5   5729.867 ± 23685.842  ops/ms
+Benchmark_1.test:removeMin           thrpt        5   7179.735 ± 19279.402  ops/ms
+Benchmark_1.test                    sample  1646451     ≈ 10⁻⁴               ms/op
+Benchmark_1.test:addValue           sample   766451     ≈ 10⁻⁴               ms/op
+Benchmark_1.test:addValue·p0.00     sample                 ≈ 0               ms/op
+Benchmark_1.test:addValue·p0.50     sample                 ≈ 0               ms/op
+Benchmark_1.test:addValue·p0.90     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.95     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.99     sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.999    sample               0.001               ms/op
+Benchmark_1.test:addValue·p0.9999   sample               0.017               ms/op
+Benchmark_1.test:addValue·p1.00     sample               4.129               ms/op
+Benchmark_1.test:removeMin          sample   880000     ≈ 10⁻⁴               ms/op
+Benchmark_1.test:removeMin·p0.00    sample                 ≈ 0               ms/op
+Benchmark_1.test:removeMin·p0.50    sample                 ≈ 0               ms/op
+Benchmark_1.test:removeMin·p0.90    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.95    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.99    sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.999   sample               0.001               ms/op
+Benchmark_1.test:removeMin·p0.9999  sample               0.011               ms/op
+Benchmark_1.test:removeMin·p1.00    sample               3.318               ms/op
+Benchmark_1.test:test·p0.00         sample                 ≈ 0               ms/op
+Benchmark_1.test:test·p0.50         sample                 ≈ 0               ms/op
+Benchmark_1.test:test·p0.90         sample               0.001               ms/op
+Benchmark_1.test:test·p0.95         sample               0.001               ms/op
+Benchmark_1.test:test·p0.99         sample               0.001               ms/op
+Benchmark_1.test:test·p0.999        sample               0.001               ms/op
+Benchmark_1.test:test·p0.9999       sample               0.014               ms/op
+Benchmark_1.test:test·p1.00         sample               4.129               ms/op
+
+Heap:
+-----
+Benchmark                             Mode      Cnt      Score       Error   Units
+Benchmark_1.test            		 thrpt    	  5   6333.318 ±  1657.938   ops/ms
+Benchmark_1.test:addValue   		 thrpt    	  5    847.742 ±  1186.426   ops/ms
+Benchmark_1.test:removeMin  		 thrpt    	  5   5485.575 ±   616.595   ops/ms
+Benchmark_1.test                    sample  1824045      0.001 ±     0.001   ms/op
+Benchmark_1.test:addValue           sample   857257      0.001 ±     0.001   ms/op
+Benchmark_1.test:addValue·p0.00     sample    		       ≈ 0          	ms/op
+Benchmark_1.test:addValue·p0.50     sample            	 0.001          	ms/op
+Benchmark_1.test:addValue·p0.90     sample            	 0.003          	ms/op
+Benchmark_1.test:addValue·p0.95     sample            	 0.003          	ms/op
+Benchmark_1.test:addValue·p0.99     sample            	 0.006          	ms/op
+Benchmark_1.test:addValue·p0.999    sample            	 0.010          	ms/op
+Benchmark_1.test:addValue·p0.9999   sample            	 0.087          	ms/op
+Benchmark_1.test:addValue·p1.00     sample            	32.080          	ms/op
+Benchmark_1.test:removeMin          sample   966788  	 ≈ 10⁻³           	ms/op
+Benchmark_1.test:removeMin·p0.00    sample            	   ≈ 0           	ms/op
+Benchmark_1.test:removeMin·p0.50    sample            	   ≈ 0           	ms/op
+Benchmark_1.test:removeMin·p0.90    sample            	 0.001           	ms/op
+Benchmark_1.test:removeMin·p0.95    sample            	 0.001           	ms/op
+Benchmark_1.test:removeMin·p0.99    sample            	 0.003           	ms/op
+Benchmark_1.test:removeMin·p0.999   sample            	 0.005           	ms/op
+Benchmark_1.test:removeMin·p0.9999  sample            	 0.033           	ms/op
+Benchmark_1.test:removeMin·p1.00    sample            	22.839           	ms/op
+Benchmark_1.test:test·p0.00         sample            	   ≈ 0           	ms/op
+Benchmark_1.test:test·p0.50         sample            	 0.001           	ms/op
+Benchmark_1.test:test·p0.90         sample            	 0.002           	ms/op
+Benchmark_1.test:test·p0.95         sample            	 0.003           	ms/op
+Benchmark_1.test:test·p0.99         sample            	 0.005           	ms/op
+Benchmark_1.test:test·p0.999        sample            	 0.009           	ms/op
+Benchmark_1.test:test·p0.9999       sample            	 0.072           	ms/op
+Benchmark_1.test:test·p1.00         sample            	 32.080           	ms/op
+
+LazySkipList:
+-------------
+Benchmark                             Mode      Cnt      Score        Error   Units
+Benchmark_1.test                     thrpt        5  81726.465 ± 125000.579  ops/ms
+Benchmark_1.test:addValue            thrpt        5   1020.360 ±    806.860  ops/ms
+Benchmark_1.test:removeMin           thrpt        5  80706.105 ± 124538.662  ops/ms
+Benchmark_1.test                    sample  1843598      0.001 ±      0.001   ms/op
+Benchmark_1.test:addValue           sample  1037956      0.001 ±      0.001   ms/op
+Benchmark_1.test:addValue·p0.00     sample                 ≈ 0                ms/op
+Benchmark_1.test:addValue·p0.50     sample               0.001                ms/op
+Benchmark_1.test:addValue·p0.90     sample               0.002                ms/op
+Benchmark_1.test:addValue·p0.95     sample               0.002                ms/op
+Benchmark_1.test:addValue·p0.99     sample               0.005                ms/op
+Benchmark_1.test:addValue·p0.999    sample               0.009                ms/op
+Benchmark_1.test:addValue·p0.9999   sample               0.063                ms/op
+Benchmark_1.test:addValue·p1.00     sample              13.779                ms/op
+Benchmark_1.test:removeMin          sample   805642     ≈ 10⁻⁴                ms/op
+Benchmark_1.test:removeMin·p0.00    sample                 ≈ 0                ms/op
+Benchmark_1.test:removeMin·p0.50    sample                 ≈ 0                ms/op
+Benchmark_1.test:removeMin·p0.90    sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.95    sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.99    sample               0.002                ms/op
+Benchmark_1.test:removeMin·p0.999   sample               0.005                ms/op
+Benchmark_1.test:removeMin·p0.9999  sample               0.019                ms/op
+Benchmark_1.test:removeMin·p1.00    sample              15.630                ms/op
+Benchmark_1.test:test·p0.00         sample                 ≈ 0                ms/op
+Benchmark_1.test:test·p0.50         sample               0.001                ms/op
+Benchmark_1.test:test·p0.90         sample               0.001                ms/op
+Benchmark_1.test:test·p0.95         sample               0.002                ms/op
+Benchmark_1.test:test·p0.99         sample               0.003                ms/op
+Benchmark_1.test:test·p0.999        sample               0.008                ms/op
+Benchmark_1.test:test·p0.9999       sample               0.044                ms/op
+Benchmark_1.test:test·p1.00         sample              15.630                ms/op
+
+ConcurrentSkipList:
+-------------------
+Benchmark                             Mode      Cnt      Score        Error   Units
+Benchmark_1.test                     thrpt        5  30784.120 ± 214433.887  ops/ms
+Benchmark_1.test:addValue            thrpt        5   5017.937 ±  26290.852  ops/ms
+Benchmark_1.test:removeMin           thrpt        5  25766.183 ± 188146.933  ops/ms
+Benchmark_1.test                    sample  1699604     ≈ 10⁻⁴                ms/op
+Benchmark_1.test:addValue           sample   816001     ≈ 10⁻⁴                ms/op
+Benchmark_1.test:addValue·p0.00     sample                 ≈ 0                ms/op
+Benchmark_1.test:addValue·p0.50     sample                 ≈ 0                ms/op
+Benchmark_1.test:addValue·p0.90     sample               0.001                ms/op
+Benchmark_1.test:addValue·p0.95     sample               0.001                ms/op
+Benchmark_1.test:addValue·p0.99     sample               0.001                ms/op
+Benchmark_1.test:addValue·p0.999    sample               0.002                ms/op
+Benchmark_1.test:addValue·p0.9999   sample               0.034                ms/op
+Benchmark_1.test:addValue·p1.00     sample              17.465                ms/op
+Benchmark_1.test:removeMin          sample   883603     ≈ 10⁻⁴                ms/op
+Benchmark_1.test:removeMin·p0.00    sample                 ≈ 0                ms/op
+Benchmark_1.test:removeMin·p0.50    sample                 ≈ 0                ms/op
+Benchmark_1.test:removeMin·p0.90    sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.95    sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.99    sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.999   sample               0.001                ms/op
+Benchmark_1.test:removeMin·p0.9999  sample               0.016                ms/op
+Benchmark_1.test:removeMin·p1.00    sample              28.279                ms/op
+Benchmark_1.test:test·p0.00         sample                 ≈ 0                ms/op
+Benchmark_1.test:test·p0.50         sample                 ≈ 0                ms/op
+Benchmark_1.test:test·p0.90         sample               0.001                ms/op
+Benchmark_1.test:test·p0.95         sample               0.001                ms/op
+Benchmark_1.test:test·p0.99         sample               0.001                ms/op
+Benchmark_1.test:test·p0.999        sample               0.001                ms/op
+Benchmark_1.test:test·p0.9999       sample               0.021                ms/op
+Benchmark_1.test:test·p1.00         sample              28.279                ms/op
