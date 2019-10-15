@@ -1,4 +1,4 @@
-Final Project:
+Final Project
 --------------
 
 I created Concurrent Priority Queues with diffrent implementations.
